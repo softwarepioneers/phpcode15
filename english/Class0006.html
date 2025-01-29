@@ -1014,16 +1014,13 @@
                             <form id="basic-form" method="post" >
                                 
                                 <div class="row">
-
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT NAME:</label>
                                             <input type="text" name="StudentName"   placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                             <!-- <input type="text" name="StudentName"     placeholder="Student Name" value="" class="form-control" onkeydown="return /[a-z,]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required > -->
                                         </div>
-                                    </div>
-
-                                   
+                                    </div>      
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT REGISTRATION DATE:</label>
@@ -1040,8 +1037,9 @@
                                             </select>
                                         </div>
                                     </div>
-                                  </div>
-                                                                    <div class="row">
+                                </div>
+
+                              <div class="row"> 
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT NATIONALITY:</label>
@@ -1215,33 +1213,10 @@
                                                     <option value="Zaire">Zaire</option>
                                                     <option value="Zambia">Zambia</option>
                                                     <option value="Zimbabwe">Zimbabwe</option>
-                                                    
-
                                             </select>
                                         </div>
                                     </div>
-                                    <!-- <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT NATIONALITY:</label>
-                                            <input type="text" name="StudentNationality"  maxlength="28" placeholder="Student Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
-                                        </div>
-                                    </div> -->
-
-                                    <!-- <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT PHONE:</label>
-                                            <select name="StudentPhone"  placeholder="Student Phone" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Phone</option>
-                                                <option value="1234567">1234567</option>
-                                                <option value="2345678">2345678</option>
-                                                <option value="3456789">3456789</option>
-                                                <option value="4567891">4567891</option>
-                                                <option value="5678912">5678912</option>
-                                                <option value="6789123">6789123</option>
-                                                <option value="7891234">7891234</option>
-                                            </select>
-                                        </div>
-                                    </div> -->
+                                  
 
 
                                     <div class="col">
@@ -1251,85 +1226,10 @@
                                         </div>
                                     </div>
 
-                                    <!-- <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT WHATSAPP:</label>
-                                            <select name="StudentWhatsApp"  placeholder="Student WhatsApp" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student WhatsApp</option>
-                                                <option value="1234567">1234567</option>
-                                                <option value="2345678">2345678</option>
-                                                <option value="3456789">3456789</option>
-                                                <option value="4567891">4567891</option>
-                                                <option value="5678912">5678912</option>
-                                                <option value="6789123">6789123</option>
-                                                <option value="7891234">7891234</option>
-                                            </select>
-                                        </div>
-                                    </div> -->
-
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT WHATSAPP:</label>
-                                            <input type="text" autocomplete="on" name="StudentWhatsApp" placeholder="Student WhatsApp" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
-                                        </div>
-                                    </div>
                                    
-                                  </div>
+
                                   
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT REGION:</label>
-                                            <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Region</option>
-                                            </select>
-                                           
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT CITY:</label>
-                                            <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student City</option>
-                                            </select>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT DISTRICT:</label>
-                                            <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student District</option>
-                                            </select>
-                                            
-                                        </div>
-                                    </div>
                                    
-                                 
-                                  </div>
-
-                                  <div class="row">
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT SCHOOL:</label>
-                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student School</option>
-                                                <option value="Salaama School">Salaama School</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group ">
-                                            <label>STUDENT STAGE:</label>
-                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Stage</option>
-                                                <option value="Kg">Kg</option>
-                                                <option value="Primary">Primary</option>
-                                                <option value="Preparatory">Preparatory</option>
-                                                <option value="Secondary">Secondary</option>
-                                            </select>
-                                        </div>
-                                    </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT CLASS:</label>
@@ -1369,9 +1269,120 @@
                                     </div>
                                    
                                   </div>
-
-                            
+                                  
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT SCHOOL:</label>
+                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student School</option>
+                                                <option value="Salaama School">Salaama School</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT STAGE:</label>
+                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                                <option value="Kg Stage">Kg Stage</option>
+                                                <option value="Primary Stage">Primary Stage</option>
+                                                <option value="Preparatory Stage">Preparatory Stage</option>
+                                                <option value="Secondary Stage">Secondary Stage</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT MOBILE:</label>
+                                            <input type="text" autocomplete="on" name="StudentMobile" placeholder="Student Mobile" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
                                    
+                                  </div>
+
+
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT REGION:</label>
+                                            <select name="StudentRegion" id="subject" placeholder="Student Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Region</option>
+                                            </select>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT CITY:</label>
+                                            <select name="StudentCity" id="topic" placeholder="Student Region" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student City</option>
+                                            </select>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT DISTRICT:</label>
+                                            <select name="StudentDistrict" id="chapter" placeholder="Student chapter" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student District</option>
+                                            </select>
+                                            
+                                        </div>
+                                    </div>
+                                   
+                                 
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT GRADE:</label>
+                                            <select name="StudentGrade" id="StudentGrade" placeholder="Student Grade" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Grade</option>
+                                                <option value="Grade 00">Grade 00</option>
+                                                <option value="Grade 01">Grade 01</option>
+                                                <option value="Grade 02">Grade 02</option>
+                                                <option value="Grade 03">Grade 03</option>
+                                                <option value="Grade 04">Grade 04</option>
+                                                <option value="Grade 05">Grade 05</option>
+                                                <option value="Grade 06">Grade 06</option>
+                                                <option value="Grade 07">Grade 07</option>
+                                                <option value="Grade 08">Grade 08</option>
+                                                <option value="Grade 09">Grade 09</option>
+                                                <option value="Grade 10">Grade 10</option>
+                                                <option value="Grade 11">Grade 11</option>
+                                                <option value="Grade 12">Grade 12</option>
+                                            </select>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT APPROVAL:</label>
+                                            <select name="StudentApproval" id="StudentApproval" placeholder="Student Approval" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Approval</option>
+                                                <option value="Approval">Approval</option>
+                                                <option value="Not Approval">Not Approval</option>
+                                            </select>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT ACTIVATION:</label>
+                                            <select name="StudentActivation" id="StudentActivation" placeholder="Student Activation" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Activation</option>
+                                                <option value="Activation">Activation</option>
+                                                <option value="Suspension">Suspension</option>
+                                            </select>
+                                            
+                                        </div>
+                                    </div>
+                                   
+                                 
+                                  </div>
+
                               
                                   <!-- <button type="submit" class="btn btn-primary js-sweetalert" data-type="success">CLICK ME</button> -->
                                   <button type="submit" class="btn btn-success">REGISTER</button>
@@ -1389,7 +1400,7 @@
              <div class="block-header">
                 <div class="row">
                     <div class="col-lg-5 col-md-8 col-sm-12">                        
-                        <h2>STUDENTS LIST:</h2>
+                        <h2>NEW STUDENTS CLASS F LIST:</h2>
                     </div>            
                 </div>
             </div>
